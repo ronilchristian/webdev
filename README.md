@@ -1,2 +1,2 @@
 # webdev
- my starting journey into web
+ my journey into web
