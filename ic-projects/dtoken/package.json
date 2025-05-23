@@ -1,0 +1,29 @@
+{
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=7.0.0"
+  },
+  "name": "dtoken",
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "prebuild": "npm run prebuild --workspaces --if-present",
+    "pretest": "npm run prebuild --workspaces --if-present",
+    "start": "npm start --workspaces --if-present",
+    "test": "npm test --workspaces --if-present"
+  },
+  "type": "module",
+  "workspaces": [
+    "src/dtoken_frontend"
+  ],
+  "dependencies": {
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2",
+    "react-scripts": "5.0.0",
+    "@dfinity/auth-client": "^0.10.3",
+    "@dfinity/authentication": "^0.10.3",
+    "@dfinity/identity": "^0.10.3",
+    "lit-html": "^1.4.1",
+    "ts-loader": "^9.2.3",
+    "typescript": "^4.3.5"
+}
+}
