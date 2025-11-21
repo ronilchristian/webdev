@@ -1,0 +1,30 @@
+{
+  "canisters": {
+    "dopen_backend": {
+      "main": "src/dopen_backend/main.mo",
+      "type": "motoko"
+    },
+    "NFT": {
+      "main": "src/NFT/nft.mo",
+      "type": "motoko"
+    },
+    "dopen_frontend": {
+      "dependencies": [
+        "dopen_backend"
+      ],
+      "source": [
+        "src/dopen_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "dopen_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
